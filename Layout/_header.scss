@@ -1,0 +1,28 @@
+.heade {
+    display:flex;
+    justify-content: center;
+}
+.logo {
+    width: 162px;
+    height: 44px;
+    margin-bottom: 5px;
+    
+  }
+
+  .headeresto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+  }
+  
+  
+  .arrow-icon{
+    font-weight: 1200;
+    position:absolute;
+    left: 15px;
+  }
+
+  
