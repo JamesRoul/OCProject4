@@ -1,0 +1,677 @@
+.ville {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAEAEA;
+    height: 50px;
+    color: #353535;
+    box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 300px;
+    background-color: #f6f6f6;
+    align-items: start;
+    padding-bottom: 25px;
+    border-radius: 0px;
+    
+}
+
+.reservez {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 80px;
+    font-size: 24px;
+    padding-top: 25px;
+font-weight: 700;
+text-align: center;
+padding-bottom: 0px;
+margin-bottom: 0px;
+}
+.decouvrez {
+
+   
+    height: 46px;
+    font-size: 18px;
+text-align: center;
+margin-top: 0px;
+padding-top: 0px;
+margin-right: 10px;
+margin-left: 10px;
+
+}
+
+///***fonctionnement***/
+
+.fonctionnement {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding-top: 22px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  
+
+    
+}
+.fonctionnementitre {
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+  
+  .circle {
+    
+    top: 25px; 
+    left: -15px; 
+    width: 25px; 
+    height: 25px;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+.icon {
+    color: #9356DC;
+}
+  /**** ****/
+
+  .Restaurants {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 15px;
+    background-color: #F6F6F6;
+    height: 1150px;
+    padding-left: 14px;
+    padding-right: 14px;
+
+  }
+  .resto {
+    padding-left: 15px;
+  }
+
+.cardrestaurants {
+    padding-top: 10px;
+    width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.cardresto {
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    height: 251px;
+    border-radius: 15px;
+    background-color: white;
+}
+.contenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 77px;
+ }
+.images {
+    object-fit: cover;
+    width: 100%;
+    height: 174px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    
+}
+.image-container {
+    position: relative;
+}
+.texte {
+    padding-left: 10px;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 16px;    
+}
+.texte p {
+    margin: 5px;
+}
+.iconocard {
+padding-top: 25px;
+padding-right: 25px;
+
+}
+.icone {
+    
+    font-size: 22px; /* Cambia el tamaño del icono según sea necesario */
+    color: white; /* Color del icono (blanco en este caso) */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /* Borde negro alrededor del icono */
+}
+
+
+.iconocard {
+    display: inline-block;
+    position: relative;
+}
+
+
+
+.iconocard:hover .icone {
+    color: transparent;
+}
+
+.iconocard::before {
+    content: "\f004";
+    font-family: "Font Awesome 5 Free";
+    font-size: 23px;
+    font-weight: 900;
+    position: absolute;
+    top: 19.5;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+    pointer-events: none; /* Evita que el pseudo-elemento interfiera con los eventos del mouse */
+    transition: opacity 0.1s; /* Añade una transición suave al cambiar el estilo */
+}
+
+.iconocard:hover::before {
+    opacity: 1;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 25px;
+    padding-top: 22px;
+    padding-bottom: 25px;
+    gap: 5px;
+background-color: #353535;
+font-family: roboto;
+font-weight: 500;
+color: white;  
+}
+.ffooter {
+    position: absolute;
+    width: 100%;
+  bottom: -700px;
+}
+
+.logofooter {
+width: 137px;
+height: 27px;
+font-style: italic;
+font-weight: 400;
+font-size: 18px;
+
+}
+.proposer {
+    display: flex;
+    flex-direction: row;
+height: 19px;
+font-size: 16px;
+gap: 10px;
+}
+.devenir {
+    display: flex;
+    flex-direction: row;
+    height: 19px;
+font-size: 16px;
+gap: 10px;
+
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+        background-color: #f6f6f6;
+        padding-bottom: 25px;
+    }
+    .reservez {
+     width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    }
+    .decouvrez {
+        width: 100%;
+        font-size: 18px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    
+    }
+    .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 210px;
+    padding-top: 22px;
+    padding-left: 30px;
+   
+}
+.fonctionnementitre {
+    font-size: 24px;
+    margin-bottom: 0px;
+    
+}
+.rowfontionnement {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    gap: 15px;
+}
+
+.Restaurants {
+    padding-top: 15px;
+    background-color: #F6F6F6;
+    height: 650px;
+    padding-left: 30px;
+  }
+  .resto {
+    padding-left: 15px;
+  }
+
+.tablet {
+    padding-top: 10px;
+    width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.cardrestaurants{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+    height: 251px;
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 20px;
+    padding-top: 0;
+    
+}
+.contenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 77px;
+ }
+.images {
+    object-fit: cover;
+    width: 100%;
+    height: 174px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.texte {
+    padding-left: 10px;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 16px;    
+}
+.texte p {
+    margin: 5px;
+}
+.iconocard {
+padding-top: 25px;
+padding-right: 10px;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    padding-left: 25px;
+    padding-top: 22px;
+    padding-bottom: 25px;
+    gap: 5px;
+background-color: #353535;
+font-family: roboto;
+font-weight: 500;
+gap: 20px;
+color: white;  
+}
+.contacto {
+    color: white;
+}
+.logofooter {
+width: 137px;
+height: 27px;
+font-style: italic;
+font-weight: 400;
+font-size: 18px;
+
+}
+.options {
+display: flex;
+flex-direction: row;
+gap: 15px;
+}
+.proposer {
+    display: flex;
+    flex-direction: row;
+height: 19px;
+font-size: 16px;
+gap: 10px;
+}
+.devenir {
+    display: flex;
+    flex-direction: row;
+    height: 19px;
+font-size: 16px;
+gap: 10px;
+
+}
+
+
+  }
+
+
+  @media (min-width: 1024px)  {
+    .menu {
+        width: 100%;;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+        background-color: #f6f6f6;
+        padding-bottom: 25px;
+    }
+    .reservez {
+     width: 100%;
+        font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    }
+    .decouvrez {
+        width: 100%;
+        font-size: 18px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    
+    }
+    .fonctionnement {
+        display: flex;
+        flex-direction: column;
+        height: 210px;
+        padding-top: 22px;
+        padding-bottom: 10px;
+        
+    }
+    .fonctionnementitre {
+        font-size: 24px;
+        margin-bottom: 0px;
+        padding-left: 100px;
+    }
+    .rowfontionnement {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        width: 100%;
+        padding-left: 100px;
+        gap: 30px;
+    }
+    
+.Restaurants {
+    padding-top: 15px;
+    background-color: #F6F6F6;
+    height: 650px;
+    padding-bottom: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .resto {
+    padding-left: 100px;
+  }
+
+.tablet {
+    padding-top: 10px;
+    width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: start;
+align-items: center;
+flex-wrap: wrap;
+gap: 20px;
+padding-left: 100px;
+
+}
+
+.cardrestaurants{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 35%;
+    height: 251px;
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-right: 90px;
+    
+}
+.contenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 77px;
+ }
+.images {
+    object-fit: cover;
+    width: 100%;
+    height: 174px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.texte {
+    padding-left: 10px;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 16px;    
+}
+.texte p {
+    margin: 5px;
+}
+.iconocard {
+padding-top: 25px;
+padding-right: 10px;
+
+}
+
+.footer {
+    box-sizing: border-box;
+   width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    padding-left: 25px;
+    padding-top: 22px;
+    padding-bottom: 25px;
+    gap: 5px;
+background-color: #353535;
+font-family: roboto;
+font-weight: 500;
+gap: 20px;
+color: white;  
+}
+
+.logofooter {
+width: 137px;
+height: 27px;
+font-style: italic;
+font-weight: 400;
+font-size: 18px;
+padding-left: 50px;
+font-family: Shrikhand;
+font-size: 18px;
+font-style: italic;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+
+
+}
+.options {
+display: flex;
+flex-direction: row;
+gap: 15px;
+}
+.proposer {
+    display: flex;
+    flex-direction: row;
+height: 19px;
+font-size: 16px;
+gap: 10px;
+}
+.devenir {
+    display: flex;
+    flex-direction: row;
+    height: 19px;
+font-size: 16px;
+gap: 10px;
+padding-right: 30px;
+
+}
+
+
+   }
+
+   @media (min-width: 1025px) {
+  
+ 
+   .fonctionnement {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 228px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+    
+    
+}
+.fonctionnementitre {
+    font-size: 24px;
+    left: 180px;
+    
+}
+.rowfontionnement {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 30px;
+}
+.cardfonctionnement {
+    height: 72px;
+    
+    border-radius: 20px;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: 25px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    gap: 17px;
+    padding-left: 26px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    margin-right: 0px;
+    width: 332px;
+    }
+    .Restaurants {
+        padding-top: 15px;
+        background-color: #F6F6F6;
+        height: 650px;
+        padding-bottom: 70px;
+        padding-left: 40px;
+        padding-right: 40px;
+       
+      }
+    .cardrestaurants{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        width: 38%;
+        height: 251px;
+        gap: 11px;
+        border-radius: 15px;
+        background-color: white;
+        margin-bottom: 20px;
+        margin-right: 90px;
+        padding-top: 0;
+        
+    }
+ } 
+ @media (min-width: 1441px) {
+    .cardrestaurants{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        width: 38%;
+        height: 251px;
+        gap: 91px;
+        border-radius: 15px;
+        background-color: white;
+        margin-bottom: 20px;
+        margin-right: 90px;
+        padding-top: 0;
+        
+    }
+   
+  }
