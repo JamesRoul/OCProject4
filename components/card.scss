@@ -1,0 +1,129 @@
+.cardfonctionnement {
+height: 72px;
+
+border-radius: 20px;
+background-color: #F6F6F6;
+display: flex;
+flex-direction: row;
+justify-content: start;
+align-items: center;
+margin-top: 25px;
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+gap: 20px;
+padding-left: 20px;
+font-size: 16px;
+font-weight: 500;
+position: relative;
+margin-right: 0px;
+}
+
+.cardmenu {
+    background-color: white;
+    height: 69px;
+    width: 95%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.cardmenuresto {
+    box-sizing: border-box;
+    width: 90%;
+    background-color: white;
+    height: 69px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 13px;
+    margin-right: 5px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.ffooter {
+    box-sizing: border-box;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .cardfonctionnement {
+        height: 72px;
+        width: 320px;
+        border-radius: 20px;
+        background-color: #F6F6F6;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        margin-top: 25px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        gap: 10px;
+        padding-left: 5px;
+        padding-right: 0px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 5px;
+        }
+        .deroulement {
+            width: 70%;
+            left: 15%;
+            right: 15%;
+            border-left: solid transparent 50px;
+            border-right: solid transparent 50px;
+
+        }
+        .ffooter {
+            position: absolute;
+            width: 100%;
+          bottom: -630px;
+        }
+        .grostitre {
+            justify-content: center;
+            gap: 50px;
+        }
+  }
+ 
+
+  @media (min-width: 1024px)  {
+    .cardfonctionnement {
+        height: 72px;
+        width: 25%;
+        border-radius: 20px;
+        background-color: #F6F6F6;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        margin-top: 25px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        gap: 10px;
+        padding-left: 5px;
+        padding-right: 0px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 5px;
+        }
+        .deroulement {
+            width: 70%;
+            left: 15%;
+            right: 15%;
+            border-left: solid transparent 100px;
+            border-right: solid transparent 100px;
+
+        }
+        .ffooter {
+            position: absolute;
+            width: 100%;
+          bottom: -630px;
+        }
+        .grostitre {
+            justify-content: center;
+            gap: 50px;
+        }
+       
+       
+  }

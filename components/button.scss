@@ -1,0 +1,18 @@
+.fleche {
+    color: #353535;
+    font-size: 16px;
+    position: absolute;
+    top: 14px;
+    left: 23px;
+}
+
+.boutoncommander {
+    display: flex;
+    justify-content: center;
+}
+.corazon {
+    font-size: 22px; 
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
