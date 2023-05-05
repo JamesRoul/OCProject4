@@ -107,9 +107,9 @@ display: none;
   right: 0;
   opacity: 0;
   transform: translateX(100%); /* Empieza la animación fuera de la pantalla a la derecha */
-  animation: slideCoche 1s forwards;
+  animation: slideCoche 0.3s forwards;
   z-index: 1;
-  transition: all 1s ease-out;
+  transition: all 0.3s ease-out;
   
  }
 
