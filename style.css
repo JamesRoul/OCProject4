@@ -15,18 +15,16 @@
 
 .headeresto {
   display: flex;
-  flex-direction: center;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 10px;
 }
 
-.fa-arrow-left {
-  left: 15px;
-}
-
 .arrow-icon {
   font-weight: 1200;
+  position: absolute;
+  left: 15px;
 }
 
 .body {
@@ -392,6 +390,14 @@
   padding-right: 25px;
 }
 
+.ip {
+  bottom: 10px;
+}
+
+.cardfonctionnement:hover i {
+  color: #9356DC;
+}
+
 .icone {
   font-size: 22px; /* Cambia el tamaño del icono según sea necesario */
   color: white; /* Color del icono (blanco en este caso) */
@@ -401,6 +407,13 @@
 .iconocard {
   display: inline-block;
   position: relative;
+}
+
+.ip a {
+  font-family: roboto;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
 }
 
 .iconocard:hover .icone {
@@ -653,32 +666,56 @@
     margin-bottom: 0px;
   }
   .fonctionnement {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     height: 210px;
     padding-top: 22px;
     padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .fonctionnementitre {
     font-size: 24px;
     margin-bottom: 0px;
     padding-left: 100px;
   }
+  .fonctionnement {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 228px;
+    padding-bottom: 50px;
+  }
+  .fonctionnementitre {
+    font-size: 24px;
+    padding-bottom: 15px;
+    padding-left: 17%;
+  }
   .rowfontionnement {
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    width: 100%;
-    padding-left: 100px;
+    justify-content: center;
     gap: 30px;
   }
-  .Restaurants {
-    padding-top: 15px;
+  .cardfonctionnement {
+    height: 72px;
+    border-radius: 20px;
     background-color: #F6F6F6;
-    height: 650px;
-    padding-bottom: 70px;
-    padding-left: 40px;
-    padding-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: 25px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    gap: 17px;
+    padding-left: 26px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    margin-right: 0px;
+    width: 20%;
   }
   .resto {
     padding-left: 100px;
@@ -688,22 +725,18 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-    padding-left: 100px;
+    gap: 91px;
   }
   .cardrestaurants {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 35%;
     height: 251px;
     border-radius: 15px;
     background-color: white;
-    margin-bottom: 20px;
-    margin-right: 90px;
   }
   .contenu {
     display: flex;
@@ -787,78 +820,22 @@
     padding-right: 30px;
   }
 }
-@media (min-width: 1025px) {
-  .fonctionnement {
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 228px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .fonctionnementitre {
-    font-size: 24px;
-    left: 180px;
-  }
-  .rowfontionnement {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 30px;
-  }
-  .cardfonctionnement {
-    height: 72px;
-    border-radius: 20px;
-    background-color: #F6F6F6;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    margin-top: 25px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    gap: 17px;
-    padding-left: 26px;
-    font-size: 16px;
-    font-weight: 500;
-    position: relative;
-    margin-right: 0px;
-    width: 332px;
-  }
+@media (min-width: 1024px) {
   .Restaurants {
     padding-top: 15px;
     background-color: #F6F6F6;
-    height: 650px;
+    height: 720px;
     padding-bottom: 70px;
-    padding-left: 40px;
-    padding-right: 40px;
   }
   .cardrestaurants {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 38%;
+    width: 31%;
     height: 251px;
     gap: 11px;
     border-radius: 15px;
     background-color: white;
-    margin-bottom: 20px;
-    margin-right: 90px;
-    padding-top: 0;
-  }
-}
-@media (min-width: 1441px) {
-  .cardrestaurants {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 38%;
-    height: 251px;
-    gap: 91px;
-    border-radius: 15px;
-    background-color: white;
-    margin-bottom: 20px;
-    margin-right: 90px;
     padding-top: 0;
   }
 }
@@ -1034,24 +1011,6 @@
   }
 }
 @media (min-width: 1024px) {
-  .cardfonctionnement {
-    height: 72px;
-    width: 25%;
-    border-radius: 20px;
-    background-color: #F6F6F6;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    margin-top: 25px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    gap: 10px;
-    padding-left: 5px;
-    padding-right: 0px;
-    font-size: 16px;
-    font-weight: 500;
-    margin-right: 5px;
-  }
   .deroulement {
     width: 70%;
     left: 15%;
@@ -1188,9 +1147,9 @@
   right: 0;
   opacity: 0;
   transform: translateX(100%); /* Empieza la animación fuera de la pantalla a la derecha */
-  animation: slideCoche 1s forwards;
+  animation: slideCoche 0.3s forwards;
   z-index: 1;
-  transition: all 1s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .validation .circle {
