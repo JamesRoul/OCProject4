@@ -148,11 +148,19 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    font-size: 16px;    
+    font-size: 16px;  
+      
 }
 .texte p {
     margin: 5px;
+    
 }
+.cardresto a {
+    text-decoration: none; /* Elimina la decoración de subrayado del enlace */
+    color: inherit; /* Hereda el color del texto del elemento padre */
+}
+
+
 .iconocard {
 padding-top: 25px;
 padding-right: 25px;
@@ -280,7 +288,8 @@ gap: 10px;
     padding-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    
+    margin-left: 0px;
+    margin-right: 0px;
     }
     .fonctionnement {
     display: flex;
@@ -446,6 +455,7 @@ gap: 10px;
     padding-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    margin-right: 0px;
     
     }
     .fonctionnement {
@@ -518,16 +528,12 @@ gap: 10px;
 
 .tablet {
     padding-top: 10px;
-    width: 100%;
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 gap: 91px;
-
-
-
 }
 
 
@@ -634,13 +640,20 @@ padding-right: 30px;
    }
 
    @media (min-width: 1024px) {
+
+    .fonctionnement {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
   
     .Restaurants {
         padding-top: 15px;
         background-color: #F6F6F6;
         height: 720px;
         padding-bottom: 70px;
-        
+        padding-left: 200px;
+        padding-right: 200px;
+
        
       }
     .cardrestaurants{
@@ -656,6 +669,11 @@ padding-right: 30px;
         padding-top: 0;
         
         
+    }
+    .decouvrez {
+        
+    margin-left: 0px;
+    
     }
  } 
  
