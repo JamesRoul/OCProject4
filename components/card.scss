@@ -47,7 +47,17 @@ margin-right: 0px;
 }
 .ffooter {
     box-sizing: border-box;
+        position: absolute;
+        width: 100%;
+      bottom: -720px;
 }
+.ffootix {
+    box-sizing: border-box;
+        position: absolute;
+        width: 100%;
+      bottom: -800px;
+}
+
 
 @media (min-width: 767px) and (max-width: 1023px) {
     .cardfonctionnement {
@@ -81,6 +91,14 @@ margin-right: 0px;
             width: 100%;
           bottom: -630px;
         }
+        .ffootix {
+            box-sizing: border-box;
+                position: absolute;
+                width: 100%;
+              bottom: -740px;
+        }
+        
+       
         .grostitre {
             justify-content: center;
             gap: 50px;
@@ -101,8 +119,16 @@ margin-right: 0px;
         .ffooter {
             position: absolute;
             width: 100%;
-          bottom: -630px;
+          bottom: -620px;
         }
+        .ffootix {
+            box-sizing: border-box;
+                position: absolute;
+                width: 100%;
+              bottom: -720px;
+        }
+        
+        
         .grostitre {
             justify-content: center;
             gap: 50px;
